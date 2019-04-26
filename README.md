@@ -119,4 +119,5 @@ Feedstock Maintainers
 =====================
 
 * [@moorepants](https://github.com/moorepants/)
+* [@urschrei](https://github.com/urschrei/)
 
