@@ -22,10 +22,10 @@ requirements:
     - python
     - feedparser >=5.1.0
     - pytz
-    - requests
+    - requests >=2.21.0
     - pathlib
     - bibtexparser
-
+    
 test:
   imports:
     - pyzotero.zotero
