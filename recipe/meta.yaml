@@ -1,5 +1,5 @@
 {% set name = "Pyzotero" %}
-{% set version = "1.4.6" %}
+{% set version = "1.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 196aeafc4b58fd3495b0cd3e3d8f378bd714139fda5cd3c11085805fead2bec1
+  sha256: 77c2e62b549bf1cacf37cc0f966a90dc6a73dd772d7f882b17adb1eaae61a12e
 
 build:
   noarch: python
@@ -22,10 +22,10 @@ requirements:
     - python
     - feedparser >=5.1.0
     - pytz
-    - requests
+    - requests >=2.21.0
     - pathlib
     - bibtexparser
-
+    
 test:
   imports:
     - pyzotero.zotero
