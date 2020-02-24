@@ -1,5 +1,5 @@
 {% set name = "Pyzotero" %}
-{% set version = "1.4.12" %}
+{% set version = "1.4.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 47f1e6022a223a3fbefbff9264dad47aff3f039fab5808c97ccc7d290d6fe4fb
+  sha256: d6606093709ec59b2491e2c472dd6e88ef37da572fab9407de34c20c7efad865
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - requests >=2.21.0
     - pathlib
     - bibtexparser
-    
+
 test:
   imports:
     - pyzotero.zotero
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: license.txt
-  summary: 'Python wrapper for the Zotero API'
+  summary: Python wrapper for the Zotero API
   doc_url: http://pyzotero.readthedocs.org
   dev_url: https://github.com/urschrei/pyzotero
 
