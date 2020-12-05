@@ -5,11 +5,13 @@ Home: https://github.com/urschrei/pyzotero
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyzotero-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python wrapper for the Zotero API
 
+Development: https://github.com/urschrei/pyzotero
 
+Documentation: http://pyzotero.readthedocs.org
 
 Current build status
 ====================
