@@ -1,5 +1,5 @@
 {% set name = "Pyzotero" %}
-{% set version = "1.4.26" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48171d00ea598a4389d4721bb93de940101762490135093560908f3bcaacbcdb
+  sha256: 0b4405557901000ad72d2835c959bb8d0dea4736b0de27995cd6fb0cd3920016
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script:
+    - rm pyproject.toml  # [unix]
+    - del pyproject.toml  # [win]
+    - {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -20,7 +23,7 @@ requirements:
     - pip
   run:
     - python
-    - feedparser >=5.1.0,<6.0.0
+    - feedparser >=6
     - pytz
     - requests >=2.21.0
     - pathlib
