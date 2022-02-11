@@ -21,6 +21,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools-scm
   run:
     - python >=3.6
     - feedparser >=6
