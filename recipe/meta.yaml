@@ -14,6 +14,7 @@ build:
   number: 0
   script:
     #- {{ PYTHON }} -c "__import__('os').unlink('pyproject.toml')"
+    - rm -f pyproject.toml
     - {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
