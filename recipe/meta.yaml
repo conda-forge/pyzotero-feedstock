@@ -35,9 +35,9 @@ test:
 
 about:
   home: https://github.com/urschrei/pyzotero
-  license: MIT
+  license: The Blue Oak Model License 1.0.0
   license_family: MIT
-  license_file: license.txt
+  license_file: LICENSE.md
   summary: Python wrapper for the Zotero API
   doc_url: http://pyzotero.readthedocs.org
   dev_url: https://github.com/urschrei/pyzotero
