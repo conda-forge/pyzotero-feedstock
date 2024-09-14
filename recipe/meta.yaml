@@ -35,7 +35,7 @@ test:
 about:
   home: https://github.com/urschrei/pyzotero
   license:  BlueOak-1.0.0
-  license_file: license.md
+  license_file: LICENSE.md
   summary: Python wrapper for the Zotero API
   doc_url: http://pyzotero.readthedocs.org
   dev_url: https://github.com/urschrei/pyzotero
