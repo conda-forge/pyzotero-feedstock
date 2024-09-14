@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyzotero-feedst
 
 Home: https://github.com/urschrei/pyzotero
 
-Package license: MIT
+Package license: BlueOak-1.0.0
 
 Summary: Python wrapper for the Zotero API
 
@@ -149,7 +149,4 @@ Feedstock Maintainers
 
 * [@moorepants](https://github.com/moorepants/)
 * [@urschrei](https://github.com/urschrei/)
-
-
-<!-- dummy commit to enable rerendering -->
 
