@@ -1,13 +1,13 @@
 {% set name = "pyzotero" %}
-{% set version = "1.5.25" %}
+{% set version = "1.5.27" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f568d0316b66cc151bac66cbb71d599dcd1b6ff64877bebb79cde3a6dc7eb6c0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 40065a4eb4876f4ecb4927d6e69093759d623e3c8351ac9a90732948eea0864c
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/urschrei/pyzotero
-  license:  BlueOak-1.0.0
+  license: BlueOak-1.0.0
   license_file: LICENSE.md
   summary: Python wrapper for the Zotero API
   doc_url: http://pyzotero.readthedocs.org
