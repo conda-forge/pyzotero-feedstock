@@ -1,5 +1,5 @@
 {% set name = "pyzotero" %}
-{% set version = "1.6.8" %}
+{% set version = "1.6.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac22ae59f8b6e216fcabf7f644fbe59a1479f491000b18d9d912b5edc7fc592e
+  sha256: 1a40ac678bd5293ebebc7f799220c0494918fedb9cc11fca9e66b39ce8898988
 
 build:
   noarch: python
@@ -31,6 +31,8 @@ requirements:
     - httpx >=0.28.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyzotero.zotero
 
