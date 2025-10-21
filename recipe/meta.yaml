@@ -13,23 +13,20 @@ build:
   noarch: python
   number: 0
   script:
-    - rm -f pyproject.toml
-    - {{ PYTHON }} -m pip install . --no-deps -vv
+    - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=45
-    - setuptools-scm >=6.2
+    - uv >=0.8.14
   run:
     - python >={{ python_min }}
-    - feedparser >=6.0.11
-    - pytz
-    - requests >=2.21.0
-    - bibtexparser
-    - httpx >=0.28.1
-
+    - feedparser >=6.0.12
+    - bibtexparser >=1.4.3
+    - httpx >=0.29.1
+    - whenever >=0.8.8
+    - click >=8.0.0
 test:
   requires:
     - python {{ python_min }}
