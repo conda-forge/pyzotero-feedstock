@@ -24,7 +24,7 @@ requirements:
     - python >={{ python_min }}
     - feedparser >=6.0.12
     - bibtexparser >=1.4.3
-    - httpx >=0.29.1
+    - httpx  # >=0.29.1 is not yet available on conda forge
     - whenever >=0.8.8
     - click >=8.0.0
 test:
