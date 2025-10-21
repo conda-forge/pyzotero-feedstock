@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - uv >=0.8.14
+    - uv-build >=0.8.14
   run:
     - python >={{ python_min }}
     - feedparser >=6.0.12
