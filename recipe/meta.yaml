@@ -11,22 +11,22 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
-    - python {{ python_min }}
     - pip
+    - python {{ python_min }}
     - uv-build >=0.8.14
   run:
-    - python >={{ python_min }}
-    - feedparser >=6.0.12
     - bibtexparser >=1.4.3
-    - httpx  # >=0.29.1 is not yet available on conda forge
-    - whenever >=0.8.8
     - click >=8.0.0
+    - feedparser >=6.0.12
+    - httpx >=0.28.1
+    - python >={{ python_min }}
+    - whenever >=0.8.8
 test:
   requires:
     - python {{ python_min }}
