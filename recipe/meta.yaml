@@ -1,5 +1,5 @@
 {% set name = "pyzotero" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 901e5ca297d44f46ba7fe7810cc8e2327374ca206ed44b62b214ffe5ea647fb3
+  sha256: 5f96f403d5bdfc658246a8850119f042a743e40904385dd73a80203ab94c3e20
 
 build:
   noarch: python
