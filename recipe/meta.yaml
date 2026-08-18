@@ -1,13 +1,13 @@
 {% set name = "pyzotero" %}
-{% set version = "1.13.4" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1b7e56fbe8e56e3d3aa55b650f5a847231571e2284f285588744a8420a800470
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7cdb33c7a592b86502660ed1ef51886af72a23f5d467b711294522044f41d78b
 
 build:
   noarch: python
