@@ -26,7 +26,7 @@ requirements:
     - feedparser >=6.0.12
     - httpx2 >=2.12.0
     - python >={{ python_min }}
-    - whenever >=0.8.8
+    - whenever >=0.10.0
 test:
   requires:
     - python {{ python_min }}
